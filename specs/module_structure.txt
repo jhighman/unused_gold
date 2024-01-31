@@ -1,0 +1,52 @@
+unused_gold/
+|-- data/sample.csv
+|-- src/
+|   |-- config/
+|   |   |-- index.js
+|   |
+|   |-- jobs/
+|   |   |-- index.js
+|   |   |-- JobScheduler.js
+|   |   |-- JobLauncher.js
+|   |   |-- Job.js
+|   |   |-- steps/
+|   |       |-- Step1.js
+|   |       |-- Step2.js
+|   |       |-- ...
+|   |
+|   |-- models/
+|   |   |-- index.js
+|   |   |-- JobModel.js
+|   |   |-- StepModel.js
+|   |
+|   |-- services/
+|   |   |-- index.js
+|   |   |-- ItemReader.js
+|   |   |-- ItemProcessor.js
+|   |   |-- ItemWriter.js
+|   |
+|   |-- utils/
+|   |   |-- logger.js
+|   |   |-- errorHandler.js
+|   |
+|   |-- repositories/
+|   |   |-- index.js
+|   |   |-- JobRepository.js
+|   |   |-- StepRepository.js
+|   |
+|   |-- app.js
+|   |-- server.js
+|
+|-- test/
+|   |-- jobs/
+|   |-- models/
+|   |-- services/
+|   |-- utils/
+|
+|-- node_modules/
+|
+|-- package.json
+|-- package-lock.json
+|-- .env
+|-- .gitignore
+|-- README.md
