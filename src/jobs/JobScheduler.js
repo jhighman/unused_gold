@@ -1,5 +1,3 @@
-// jobs/JobScheduler.js
-
 const Agenda = require('agenda');
 const processCSVJob = require('./Job');
 const logger = require('../utils/logger'); // Assuming logger is in the utils directory
@@ -26,7 +24,6 @@ async function startJobScheduler() {
     });
 
     await agenda.start();
-    //await agenda.every('1 hour', 'process csv');
     await agenda.every('1 minute', 'process csv');
     logger.info('Job scheduler started successfully.');
   } catch (error) {

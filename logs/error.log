@@ -1,0 +1,2 @@
+2024-01-31T19:03:13.559Z - error: Error processing records: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+2024-01-31T19:03:13.561Z - error: Error in CSV processing job: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
