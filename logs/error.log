@@ -1,2 +1,59 @@
 2024-01-31T19:03:13.559Z - error: Error processing records: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
 2024-01-31T19:03:13.561Z - error: Error in CSV processing job: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+2024-01-31T20:34:16.903Z - error: CSV job failed: Operation `jobs.insertOne()` buffering timed out after 10000ms
+2024-01-31T22:29:56.013Z - error: CSV job failed: Step1 is not defined
+2024-01-31T22:31:58.766Z - error: Error in Step1: Step validation failed: job: Cast to ObjectId failed for value "processCSV-1706740318674" (type string) at path "job" because of "BSONError"
+2024-01-31T22:31:58.770Z - error: CSV job failed: Cannot read properties of undefined (reading 'stepIdentifier')
+2024-01-31T23:01:32.922Z - error: Error in Step3: Step validation failed: job: Cast to ObjectId failed for value "processCSV-1706742090626" (type string) at path "job" because of "BSONError"
+2024-01-31T23:01:32.925Z - error: CSV job failed: Cannot read properties of undefined (reading 'stepIdentifier')
+2024-01-31T23:02:32.887Z - error: Error in Step3: Step validation failed: job: Cast to ObjectId failed for value "processCSV-1706742150645" (type string) at path "job" because of "BSONError"
+2024-01-31T23:02:32.888Z - error: CSV job failed: Cannot read properties of undefined (reading 'stepIdentifier')
+2024-01-31T23:07:01.829Z - error: Error in Step3: fs is not defined
+2024-01-31T23:07:01.875Z - error: CSV job failed: fs is not defined
+2024-01-31T23:08:01.800Z - error: Error in Step3: fs is not defined
+2024-01-31T23:08:01.847Z - error: CSV job failed: fs is not defined
+2024-01-31T23:09:01.791Z - error: Error in Step3: fs is not defined
+2024-01-31T23:09:01.834Z - error: CSV job failed: fs is not defined
+2024-01-31T23:10:01.778Z - error: Error in Step3: fs is not defined
+2024-01-31T23:10:01.827Z - error: CSV job failed: fs is not defined
+2024-01-31T23:11:44.022Z - error: Error in Step3: Cannot read properties of undefined (reading 'createWriteStream')
+2024-01-31T23:11:44.072Z - error: CSV job failed: Cannot read properties of undefined (reading 'createWriteStream')
+2024-01-31T23:12:43.976Z - error: Error in Step3: Cannot read properties of undefined (reading 'createWriteStream')
+2024-01-31T23:12:44.019Z - error: CSV job failed: Cannot read properties of undefined (reading 'createWriteStream')
+2024-01-31T23:13:44.001Z - error: Error in Step3: Cannot read properties of undefined (reading 'createWriteStream')
+2024-01-31T23:13:44.043Z - error: CSV job failed: Cannot read properties of undefined (reading 'createWriteStream')
+2024-01-31T23:15:08.658Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:15:08.704Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:16:08.599Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:16:08.643Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:21:50.076Z - error: Error in Step3: grid.mongo.ObjectID is not a constructor
+2024-01-31T23:21:50.126Z - error: CSV job failed: grid.mongo.ObjectID is not a constructor
+2024-01-31T23:22:50.022Z - error: Error in Step3: grid.mongo.ObjectID is not a constructor
+2024-01-31T23:22:50.067Z - error: CSV job failed: grid.mongo.ObjectID is not a constructor
+2024-01-31T23:23:50.025Z - error: Error in Step3: grid.mongo.ObjectID is not a constructor
+2024-01-31T23:23:50.069Z - error: CSV job failed: grid.mongo.ObjectID is not a constructor
+2024-01-31T23:24:50.068Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:24:50.120Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:25:50.005Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:25:50.047Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:26:50.007Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:26:50.051Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:27:50.013Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:27:50.069Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:28:50.029Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:28:50.071Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:29:50.014Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:29:50.057Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:30:50.000Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:30:50.046Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:31:50.017Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:31:50.061Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:32:50.092Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:32:50.140Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:37:56.454Z - error: Error in Step3: GridFS is not initialized
+2024-01-31T23:37:56.499Z - error: CSV job failed: GridFS is not initialized
+2024-01-31T23:46:59.983Z - error: Database connection failed: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-01-31T23:46:59.986Z - error: Test failed: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-01-31T23:55:33.971Z - error: Database connection failed: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-01-31T23:55:33.988Z - error: Test failed: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-02-01T00:29:47.621Z - error: Test failed: connectDB is not a function

@@ -3,6 +3,7 @@ unused_gold/
 |-- src/
 |   |-- config/
 |   |   |-- index.js
+|   |   |-- dbConnection.js
 |   |
 |   |-- jobs/
 |   |   |-- index.js
@@ -39,6 +40,7 @@ unused_gold/
 |
 |-- test/
 |   |-- jobs/
+|   |   |-- jobTest.js
 |   |-- models/
 |   |-- services/
 |   |-- utils/

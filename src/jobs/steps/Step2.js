@@ -1,16 +1,25 @@
 // src/jobs/steps/Step2.js
 
-const logger = require('../../utils/logger');
+const BaseStep = require('./BaseStep');
 
-async function archiveFile(csvFilePath) {
-    // Stub for file archiving
-    try {
-        // Add file archiving logic here
-        logger.info(`File archived: ${csvFilePath}`);
-    } catch (error) {
-        logger.error('Error archiving file:', error);
-        throw error;  // Re-throw the error to be handled by Job.js
+class Step2 extends BaseStep {
+    constructor(jobId) {
+        super(jobId, 'Step2');
+        // Additional properties specific to Step2 can be initialized here if needed
+    }
+
+    async executeStep() {
+        // TODO: Implement specific logic for Step 2 here
+        // This is where the core functionality of Step 2 should be implemented
+
+        /* Example:
+        *  const result = await someStep2Function();
+        *  processResult(result);
+        */
+
+        // Note: Any errors thrown here will be caught in BaseStep.execute
+        // and the step status will be updated accordingly.
     }
 }
 
-module.exports = archiveFile;
+module.exports = Step2;
