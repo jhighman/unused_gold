@@ -57,3 +57,76 @@
 2024-01-31T23:55:33.971Z - error: Database connection failed: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 2024-01-31T23:55:33.988Z - error: Test failed: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 2024-02-01T00:29:47.621Z - error: Test failed: connectDB is not a function
+2024-02-02T14:36:53.499Z - error: CSV job failed: this.context.get is not a function
+2024-02-02T15:03:43.456Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-02T15:03:44.461Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-02T15:03:45.569Z - error: Error in Step3: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:03:45.630Z - error: Error in Step2: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:03:45.674Z - error: Error in Step1: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:03:45.721Z - error: CSV job failed: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:12:30.183Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-02T15:12:30.186Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-02T15:12:30.278Z - error: Error in Step3: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:12:30.332Z - error: Error in Step2: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:12:30.379Z - error: Error in Step1: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:12:30.425Z - error: CSV job failed: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Context
+2024-02-02T15:21:03.496Z - error: [Step1] ExecuteStep: Error processing records - validateItem.setNextItem is not a function
+2024-02-02T15:21:03.498Z - error: Error in Step1: validateItem.setNextItem is not a function
+2024-02-02T15:21:03.553Z - error: CSV job failed: validateItem.setNextItem is not a function
+2024-02-02T15:25:28.243Z - error: [Step1] ExecuteStep: Error processing records - validateItem.setNextItem is not a function
+2024-02-02T15:25:28.246Z - error: Error in Step1: validateItem.setNextItem is not a function
+2024-02-02T15:25:28.303Z - error: CSV job failed: validateItem.setNextItem is not a function
+2024-02-03T00:10:16.415Z - error: [Step1] ExecuteStep: Error processing records - validateItem.setNextItem is not a function
+2024-02-03T00:10:16.417Z - error: Error in Step1: validateItem.setNextItem is not a function
+2024-02-03T00:10:16.470Z - error: CSV job failed: validateItem.setNextItem is not a function
+2024-02-03T00:25:07.209Z - error: Error in 'Step1' for jobId '65bd87e2b1c44727c4f17772': executeStep() must be implemented by subclasses
+2024-02-03T00:25:07.260Z - error: [Step1] ExecuteStep: Error processing records - executeStep() must be implemented by subclasses
+2024-02-03T00:25:07.260Z - error: Error in Step1: executeStep() must be implemented by subclasses
+2024-02-03T00:25:07.304Z - error: CSV job failed: executeStep() must be implemented by subclasses
+2024-02-03T00:31:25.468Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T00:31:26.473Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T00:45:22.811Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T00:45:23.818Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T00:54:20.344Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T00:54:21.348Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T00:54:40.697Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T00:54:41.699Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:14:18.873Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:14:19.880Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:15:42.840Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:15:43.844Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:22:52.763Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:22:53.767Z - error: Step1: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:28:07.259Z - error: Validate: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:28:08.263Z - error: Validate: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:28:32.156Z - error: Validate: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:28:33.158Z - error: Validate: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:28:58.204Z - error: Validate: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:28:59.207Z - error: Validate: Error executing undefined operation: Unknown operation: undefined
+2024-02-03T01:47:30.023Z - error: [Step1] ExecuteStep: Error processing records - Invalid operation: undefined
+2024-02-03T01:47:30.024Z - error: Base execure Error in Step1: Invalid operation: undefined
+2024-02-03T01:47:30.072Z - error: Job failed: Invalid operation: undefined
+2024-02-03T01:47:45.313Z - error: [Step1] ExecuteStep: Error processing records - Invalid operation: undefined
+2024-02-03T01:47:45.315Z - error: Base execure Error in Step1: Invalid operation: undefined
+2024-02-03T01:47:45.365Z - error: Job failed: Invalid operation: undefined
+2024-02-03T01:49:33.275Z - error: [Step1] ExecuteStep: Error processing records - Invalid operation: undefined
+2024-02-03T01:49:33.277Z - error: Base execure Error in Step1: Invalid operation: undefined
+2024-02-03T01:49:33.326Z - error: Job failed: Invalid operation: undefined
+2024-02-03T01:52:27.431Z - error: [Step1] ExecuteStep: Error processing records - Invalid operation: undefined
+2024-02-03T01:52:27.433Z - error: Base execure Error in Step1: Invalid operation: undefined
+2024-02-03T01:52:27.482Z - error: Job failed: Invalid operation: undefined
+2024-02-03T01:54:03.275Z - error: [Step1] ExecuteStep: Error processing records - Invalid operation: undefined
+2024-02-03T01:54:03.278Z - error: Base execure Error in Step1: Invalid operation: undefined
+2024-02-03T01:54:03.327Z - error: Job failed: Invalid operation: undefined
+2024-02-03T02:03:08.445Z - error: [Step1] ExecuteStep: Error processing records - Invalid operation: undefined
+2024-02-03T02:03:08.446Z - error: Base execure Error in Step1: Invalid operation: undefined
+2024-02-03T02:03:08.502Z - error: Job failed: Invalid operation: undefined
+2024-02-03T02:04:19.896Z - error: [Step1] ExecuteStep: Error processing records - Invalid operation: undefined
+2024-02-03T02:04:19.897Z - error: Base execure Error in Step1: Invalid operation: undefined
+2024-02-03T02:04:19.976Z - error: Job failed: Invalid operation: undefined
+2024-02-03T10:31:15.405Z - error: [Step1] ExecuteStep: Error processing records - TransformItem is not a constructor
+2024-02-03T10:31:15.406Z - error: Base execure Error in Step1: TransformItem is not a constructor
+2024-02-03T10:31:15.455Z - error: Job failed: TransformItem is not a constructor
+2024-02-03T10:56:51.150Z - error: [Step1] ExecuteStep: Error processing records - TransformItem is not a constructor
+2024-02-03T10:56:51.152Z - error: Base execure Error in Step1: TransformItem is not a constructor
+2024-02-03T10:56:51.200Z - error: Job failed: TransformItem is not a constructor

@@ -1,7 +1,9 @@
 const express = require('express');
 const logger = require('./utils/logger');
 const errorHandler = require('./utils/errorHandler');
-const connectDB = require('./config/dbConnection'); // Import the database connection
+//const connectDB = require('./config/dbConnection'); // Import the database connection
+const { connectDB } = require('./config/dbConnection'); // Adjust the path as necessary
+
 
 // Load environment variables
 require('dotenv').config();
