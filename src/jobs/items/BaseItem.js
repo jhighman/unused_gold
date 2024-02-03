@@ -1,20 +1,26 @@
 // src/jobs/items/BaseItem.js
-
 const logger = require('../../utils/logger');
 const Operations = require('./Operations');
+const ItemRepository = require('../../repositories/ItemRepository');
 
 class BaseItem {
-    constructor(jobId, stepName, context, operation) {
+    constructor(step, context, operation) {
         if (!Object.values(Operations).includes(operation)) {
             throw new Error(`Invalid operation: ${operation}`);
         }
 
-        this.jobId = jobId;
-        this.stepName = stepName;
+        if (!step) {
+            throw new Error('Step object is required');
+        }
+
+        this.step = step; // Store the entire step object
         this.context = context;
         this.operation = operation;
+        this.item = null; // Placeholder for the item created during start
         this.nextItem = null;
-        this.shouldContinue = true;
+        this.shouldContinue = false;
+        this.expectedKeys = [];
+        this.itemRepository = new ItemRepository();
     }
 
     setNextItem(item) {
@@ -26,15 +32,24 @@ class BaseItem {
     }
 
     async start() {
-        // Placeholder for starting logic, if any
-        logger.info(`${this.stepName}: *************** Starting ${this.operation} operation...`);
+        logger.info(`${this.step.stepName}: -----> Starting ${this.operation} operation...`);
+
+        // Create an item in the database for this operation and store it in the instance
+        this.item = await this.itemRepository.createItem(this.step, this.operation);
     }
 
     async finish(status) {
-        // Placeholder for finishing logic, if any
-        logger.info(`${this.stepName}: ${this.operation} operation finished with status: ${status}.`);
+        if (!this.item) {
+            throw new Error('Attempted to finish an operation without starting it');
+        }
+
+        logger.info(`${this.step.stepName}: ${this.operation} operation finished with status: ${status}`);
+
+        // Update the stored item with the finish status and time
+        await this.itemRepository.updateItem(this.item, status);
     }
 
+    // Placeholder methods. These should be implemented in subclasses.
     async validate() {
         throw new Error('Validate operation is not implemented');
     }
@@ -51,7 +66,17 @@ class BaseItem {
         throw new Error('Write operation is not implemented');
     }
 
+    expects(key) {
+        this.expectedKeys.push(key);
+    }
+
     async executeOperation() {
+        for (const key of this.expectedKeys) {
+            if (!this.context.has(key)) {
+                throw new Error(`Expected context key '${key}' is missing.`);
+            }
+        }
+
         switch (this.operation) {
             case Operations.VALIDATE:
                 await this.validate();
@@ -69,7 +94,7 @@ class BaseItem {
                 throw new Error(`Unknown operation: ${this.operation}`);
         }
     }
-    
+
     async execute() {
         await this.start();
         try {
@@ -80,8 +105,7 @@ class BaseItem {
             }
         } catch (error) {
             await this.finish('failed');
-            logger.error(`${this.stepName}: Error executing ${this.operation} operation:`, error);
-            // Optionally control whether to continue to the next item on error
+            logger.error(`${this.step.stepName}: Error executing ${this.operation} operation:`, error);
             if (this.nextItem && this.shouldContinue) {
                 await this.nextItem.execute();
             }

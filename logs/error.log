@@ -130,3 +130,12 @@
 2024-02-03T10:56:51.150Z - error: [Step1] ExecuteStep: Error processing records - TransformItem is not a constructor
 2024-02-03T10:56:51.152Z - error: Base execure Error in Step1: TransformItem is not a constructor
 2024-02-03T10:56:51.200Z - error: Job failed: TransformItem is not a constructor
+2024-02-03T12:23:39.458Z - error: Operation 2: Error executing transform operation: No record to transform
+2024-02-03T12:23:39.459Z - error: Operation 3: Error executing write operation: No model to write
+2024-02-03T12:23:39.460Z - error: Operation 2: Error executing transform operation: No record to transform
+2024-02-03T12:23:39.460Z - error: Operation 3: Error executing write operation: No model to write
+2024-02-03T12:28:17.833Z - error: Operation 3: Error executing write operation: logger is not defined
+2024-02-03T12:28:17.835Z - error: Operation 3: Error executing write operation: logger is not defined
+2024-02-03T13:43:05.417Z - error: [Step1] ExecuteStep: Error processing records - stepIdentifier is not defined
+2024-02-03T13:43:05.418Z - error: Base execure Error in Step1: stepIdentifier is not defined
+2024-02-03T13:43:05.470Z - error: Job failed: stepIdentifier is not defined

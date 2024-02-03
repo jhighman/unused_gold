@@ -1,13 +1,11 @@
-// src/jobs/items/TransformItem.js
 const BaseItem = require('./BaseItem');
-const Operations = require('./Operations'); // Ensure the path is correct
+const logger = require('../../utils/logger');
+const Operations = require('./Operations');
 
 class TransformItem extends BaseItem {
-
-    constructor(jobId, stepName, context) {
-        // Pass the "validate" operation type to the BaseItem constructor
-        super(jobId, stepName, context, Operations.TRANSFORM);
-        this.record = this.context.get('currentRecord'); // Assuming "currentRecord" is set in the context
+    constructor(step, context) {
+        super(step, context, Operations.TRANSFORM); // Pass the step and context in the correct order
+        this.record = context.get('currentRecord'); // Assuming "currentRecord" is set in the context
     }
 
     async transform() {
@@ -25,3 +23,5 @@ class TransformItem extends BaseItem {
         logger.info('Mapped model:', mappedModel);
     }
 }
+
+module.exports = TransformItem;

@@ -35,3 +35,5 @@ class WriteItem extends BaseItem {
         }
     }
 }
+
+module.exports = WriteItem;

@@ -25,17 +25,15 @@ class Step1 extends BaseStep {
             const records = await readCSV(this.csvFilePath);
             logger.debug(`[Step1] ________________ExecuteStep: Found ${records.length} records to process`);
 
-            const context = new Context();
-            context.set('key', 'value');
 
             for (const [index, record] of records.entries()) {
                 logger.info(`[Step1] Processing record ${index + 1}`);
                 this.context.set('currentRecord', record);
 
                 // Setup the chain of items with their specific operation
-                const validateItem = new ValidateRecordItem(this.jobId, 'Operation 1', context);
-                const transformItem = new TransformItem(this.jobId, 'Operation 2', context);
-                const writeItem = new WriteItem(this.jobId, 'Operation 3', context);
+                const validateItem = new ValidateRecordItem(this.jobId, 'Operation 1', this.context);
+                const transformItem = new TransformItem(this.jobId, 'Operation 2', this.context);
+                const writeItem = new WriteItem(this.jobId, 'Operation 3', this.context);
                 // Link the items in a chain
                 validateItem.setNextItem(transformItem);
                 transformItem.setNextItem(writeItem);
