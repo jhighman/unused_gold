@@ -139,3 +139,9 @@
 2024-02-03T13:43:05.417Z - error: [Step1] ExecuteStep: Error processing records - stepIdentifier is not defined
 2024-02-03T13:43:05.418Z - error: Base execure Error in Step1: stepIdentifier is not defined
 2024-02-03T13:43:05.470Z - error: Job failed: stepIdentifier is not defined
+2024-02-03T19:17:26.405Z - error: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-02-03T19:21:32.234Z - error: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-02-03T19:29:58.072Z - error: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-02-03T19:39:36.325Z - error: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-02-03T19:56:16.656Z - error: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-02-03T20:13:53.452Z - error: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.

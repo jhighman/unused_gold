@@ -24,5 +24,5 @@ mongoose.connection.on("connected", () => {
 
 module.exports = {
     connectDB,
-    getBucket: () => bucket
+    bucket
 };
